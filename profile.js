@@ -1,17 +1,9 @@
-/*
- * Cheng Yuan — 个人主页资料表
- * 根据 2026-09-18 提供的 CV 正文整理；不包含 LaTeX 注释或文档结束后的旧模板。
- * 通常只需编辑本文件。照片与 CV PDF 放在 assets/ 文件夹。
- * 待补充：中文姓名、照片、学术主页链接、CV PDF、办公室/邮编、基金项目角色。
- * 论文合作者保留 CV 的 with 写法；arXiv 链接按原文编号生成，状态按 CV 保留。
- * 教育经历的 2027 年为预期毕业年份。空字符串表示尚未提供或可选信息。
- */
 window.PROFILE = {
   "site": {
     "templateMode": false,
     "title": "Cheng Yuan | Academic Homepage",
     "description": "Cheng Yuan, Ph.D. student in mathematics at Fudan University. Research in partial differential equations, boundary layer theory and regularity of degenerate parabolic equations.",
-    "lastUpdated": "2026-09-18",
+    "lastUpdated": "2026-09-19",
     "sections": {
       "about": true,
       "cv": true,
@@ -21,6 +13,7 @@ window.PROFILE = {
       "contact": true
     }
   },
+
   "profile": {
     "nameEn": "Cheng Yuan",
     "nameZh": "袁诚",
@@ -43,15 +36,33 @@ window.PROFILE = {
       }
     ]
   },
+
   "about": {
     "paragraphs": [
-      "I am a Ph.D. student in mathematics at the School of Mathematical Sciences, Fudan University, advised by Professor Zhen Lei.",
+      "I am a Ph.D. student in mathematics at the School of Mathematical Sciences, Fudan University, advised by Professor Zhen Lei. I received my B.S. in Mathematics from the School of Mathematics and Statistics, Chongqing University, in 2022.",
       "My research concerns partial differential equations arising in physics and finance, with a particular focus on boundary layer theory and regularity theory for degenerate parabolic equations.",
-      "I received my B.S. in Mathematics from the School of Mathematics and Statistics, Chongqing University, in 2022."
+      "My hobbies are table tennis and travel. I am also discovering new hobbies and skills."
     ],
-    "chineseBio": "我现为复旦大学数学科学学院数学专业博士研究生，研究方向包括物理与金融中的偏微分方程，重点关注边界层理论及退化抛物型方程的正则性理论。2022 年本科毕业于重庆大学数学与统计学院。",
-    "researchSummary": "My work includes stability and regularity for Prandtl equations, parabolic equations with rough coefficients, and problems in mathematical fluid dynamics."
+    "chineseBio": "",
+    "researchSummary": "My research focuses on regularity for degenerate parabolic equations and the mathematical theory of fluid mechanics.",
+    "photos": [
+      {
+        "src": "assets/photolife1.jpg",
+        "alt": "Personal photograph of Cheng Yuan (1)",
+        "width": 4260,
+        "height": 4918,
+        "caption": ""
+      },
+      {
+        "src": "assets/photolife2.jpg",
+        "alt": "Personal photograph of Cheng Yuan (2)",
+        "width": 2330,
+        "height": 2619,
+        "caption": ""
+      }
+    ]
   },
+
   "cv": {
     "englishPdf": "assets/cvEN.pdf",
     "chinesePdf": "",
@@ -74,26 +85,38 @@ window.PROFILE = {
         "detail": "GPA in specialized courses: 4.0/4.0 · Rank: 1/160"
       }
     ],
+
     "academicExperience": [
       {
-        "period": "2022–2024",
-        "title": "Organizer, weekly PDE seminar",
+        "category": "Conference and Workshop Organization",
+        "period": "December 2024",
+        "title": "Workshop on Differential Equations and Nonlinear Analysis",
         "institution": "Fudan University",
-        "detail": ""
+        "detail": "Co-organized with X. Cheng and Z. Luo."
       },
       {
-        "period": "2020–2022",
-        "title": "Organizer and speaker, weekly lectures",
+        "category": "Seminar and Lecture Series Organization",
+        "period": "",
+        "title": "Organizer and speaker of weekly lectures",
         "institution": "CMC",
-        "detail": "",
+        "detail": "Chongqing University",
         "url": "http://www.cmathc.cn"
+      },
+      {
+        "category": "Seminar and Lecture Series Organization",
+        "period": "",
+        "title": "Organizer of the weekly PDEs Seminar",
+        "institution": "Fudan University",
+        "detail": ""
       }
     ],
+
     "languages": [
       "Chinese — Native",
       "English — Fluent"
     ]
   },
+
   "research": {
     "interestsAreExamples": false,
     "interests": [
@@ -103,14 +126,16 @@ window.PROFILE = {
       },
       {
         "title": "Degenerate parabolic equations",
-        "description": "Regularity theory and Cauchy problems for equations with rough coefficients."
+        "description": "Regularity theory for linear/nonlinear (ultra-)parabolic equations from physics and finance."
       },
       {
-        "title": "PDEs in physics and finance",
+        "title": "Fluid Dynamics",
         "description": "Partial differential equations and mathematical fluid dynamics, including Navier–Stokes and Oldroyd-B models."
       }
     ],
+
     "statementPdf": "",
+
     "publications": [
       {
         "title": "Sharp asymptotic stability of Blasius profile in the steady Prandtl equation",
@@ -119,7 +144,8 @@ window.PROFILE = {
         "year": "2025",
         "doi": "",
         "arxiv": "",
-        "pdf": "assets/JLY_SharpCR.pdf"
+        "pdf": "assets/JLY_SharpCR.pdf",
+        "summary": "We prove the sharp convergence rate between the solution of steady Prandtl equation and the Blasius self-similar solution as $x\to\infty$. "
       },
       {
         "title": "Backward Uniqueness for 3D Navier-Stokes Equations With Non-Trivial Final Data and Applications",
@@ -128,9 +154,11 @@ window.PROFILE = {
         "year": "2024",
         "doi": "",
         "arxiv": "",
-        "pdf": "assets/LYY_BU.pdf"
+        "pdf": "assets/LYY_BU.pdf",
+        "summary": "We prove the backward uniqueness for the solutions of Navier-Stokes equation with bounded velocity and vorticity with non-trivial final data."
       }
     ],
+
     "preprints": [
       {
         "title": "On Cauchy problems for parabolic equations with rough coefficients",
@@ -139,7 +167,8 @@ window.PROFILE = {
         "year": "2026",
         "doi": "",
         "arxiv": "https://arxiv.org/abs/2608.29984",
-        "pdf": ""
+        "pdf": "",
+        "summary": "We study the regularity theory of Cauchy problem for parabolic equation with rough coefficients in critical weak-typeSobolev spaces."
       },
       {
         "title": "Global well-posedness and regularity of the dynamical Prandtl equation",
@@ -148,7 +177,8 @@ window.PROFILE = {
         "year": "2026",
         "doi": "",
         "arxiv": "https://arxiv.org/abs/2606.13134",
-        "pdf": ""
+        "pdf": "",
+        "summary": "We prove the up-to-boundary smoothness and global-in-$t,x$ well-posedness of dynamic Prandtl equations in Sobolev spaces. As important steps, we state up-to-boundary regularity theory of variable coefficient ultraparabolic differential operators."
       },
       {
         "title": "Global well-posedness and uniform-in-time vanishing damping limit for the inviscid Oldroyd-B model",
@@ -157,9 +187,11 @@ window.PROFILE = {
         "year": "2024",
         "doi": "",
         "arxiv": "https://arxiv.org/abs/2410.09340",
-        "pdf": ""
+        "pdf": "",
+        "summary": "We study the (independent with damping) global well-posedness of Oldroyd-B model in optimal functional spaces, the sharp local/global vanishing damping rates are also proved."
       }
     ],
+
     "talks": [
       {
         "date": "July 2026",
@@ -270,7 +302,7 @@ window.PROFILE = {
         "date": "December 2024",
         "title": "Workshop on Differential Equations and Nonlinear Analysis",
         "venue": "Fudan University",
-        "role": "Organizer",
+        "role": "Co-organizer with X. Cheng and Z. Luo",
         "url": ""
       },
       {
@@ -323,11 +355,14 @@ window.PROFILE = {
         "url": ""
       }
     ],
+
     "service": [
-      "2022–2024 · Organizer of the weekly PDE seminar at Fudan University.",
-      "2020–2022 · Organizer and speaker of weekly lectures for CMC."
+      "December 2024 · Co-organizer of the Workshop on Differential Equations and Nonlinear Analysis at Fudan University, with X. Cheng and Z. Luo.",
+      "Organizer and speaker of weekly lectures for CMC at Chongqing University.",
+      "Organizer of the weekly PDEs Seminar at Fudan University."
     ]
   },
+
   "grants": {
     "projects": [
       {
@@ -336,10 +371,11 @@ window.PROFILE = {
         "agency": "National Natural Science Foundation of China (NSFC)",
         "number": "123B2008",
         "funding": "300,000 CNY",
-        "role": "",
+        "role": "Principal Investigator (PI)",
         "status": ""
       }
     ],
+
     "awards": [
       {
         "period": "2025",
@@ -397,6 +433,7 @@ window.PROFILE = {
       }
     ]
   },
+
   "teaching": {
     "current": [],
     "past": [
@@ -411,6 +448,7 @@ window.PROFILE = {
       }
     ]
   },
+
   "contact": {
     "office": "Guanghua East Main Hall, Room 2101",
     "address": "220 Handan Road, Shanghai, China",
