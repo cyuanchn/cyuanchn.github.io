@@ -13,3 +13,100 @@ main{min-width:0}main:focus{outline:none}.page-header{border-bottom:1px solid va
 @media(max-width:440px){.masthead-inner,.template-tools-inner{padding-left:20px;padding-right:20px}.page-layout{padding-left:20px;padding-right:20px}.site-footer,.filling-guide{margin-left:20px;margin-right:20px}.primary-nav{column-gap:14px;row-gap:14px;justify-content:flex-start;display:grid;grid-template-columns:repeat(3,1fr)}.primary-nav a[aria-current=page]:after{bottom:-5px;right:auto;width:30px}.primary-nav a{min-height:42px}.profile{grid-template-columns:88px minmax(0,1fr);column-gap:21px}.portrait{width:82px;height:82px}.portrait .photo-word{font-size:12px}.portrait .photo-note{font-size:12px}.profile-name{font-size:21px}.template-tools-inner p>span:last-child{line-height:1.65;display:block}.template-tools-inner p{gap:5px}.template-label{font-size:12px}.timeline li,.course-list li{grid-template-columns:1fr;gap:6px}.contact-grid{grid-template-columns:1fr}.contact-full{grid-column:1}.page-header h1{font-size:33px}.paper{padding-left:28px}.home-links{gap:16px}.site-footer #last-updated{display:block;margin-left:0}.guide-table{font-size:13px}.profile-links{gap:10px 15px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{.template-tools,.fill-note,.profile-fill,.template-footer,.primary-nav,.home-links,.skip-link{display:none!important}.masthead{border-top:0}.page-layout{padding:25px 0;grid-template-columns:190px 1fr;gap:30px}.profile{position:static}.page-header h1{font-size:30px}.site-footer{margin:0}.placeholder{background:none}a{color:inherit}.page{break-inside:auto}}
+/* English navigation */
+.primary-nav a {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.primary-nav a[aria-current="page"]:after {
+  bottom: -7px;
+}
+
+/* Personal photographs */
+.life-photos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.life-photo {
+  margin: 0;
+  min-width: 0;
+}
+
+.life-photo a {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--wash);
+}
+
+.life-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.life-photo figcaption {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin-top: 10px;
+}
+
+/* Paper descriptions */
+.paper-summary {
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 12px 0 0;
+  color: #4d5d69;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+
+/* Academic experience groups */
+.experience-group + .experience-group {
+  margin-top: 28px;
+}
+
+.content-section .experience-group-title {
+  font-size: 16px;
+  color: var(--blue);
+  margin: 0 0 18px;
+  line-height: 1.5;
+}
+
+.timeline h4 {
+  font-size: 17px;
+  margin: 0 0 5px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.timeline li.undated {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+/* Mobile layout */
+@media (max-width: 780px) {
+  .primary-nav a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .life-photos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media print {
+  .life-photo,
+  .paper {
+    break-inside: avoid;
+  }
+}
