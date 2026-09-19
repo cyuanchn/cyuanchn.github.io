@@ -357,3 +357,7 @@ body {
     padding: 0 0 14px;
   }
 }
+/* Remove alternating backgrounds from research interests */
+.research-list li:nth-child(even) {
+  background: transparent;
+}
