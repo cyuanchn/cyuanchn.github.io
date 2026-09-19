@@ -197,7 +197,7 @@ window.PROFILE = {
         "date": "July 2026",
         "title": "Conference on Mathematical Fluid Dynamics",
         "venue": "Feishu Shanghai",
-        "role": "Host",
+        "role": "",
         "url": ""
       },
       {
