@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cheng Yuan, Ph.D. student in mathematics at Fudan University. Research in PDEs, boundary layer theory and regularity of degenerate parabolic equations.">
+  <meta name="color-scheme" content="light">
+  <title>Cheng Yuan | Academic Homepage</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232b5b7c'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Georgia,serif' font-size='46' fill='white'%3E%E2%88%82%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="profile.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳转到正文</a>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="site-title" href="#about"><span id="site-name">Cheng Yuan</span><span class="site-subtitle">ACADEMIC HOMEPAGE</span></a>
+      <nav class="primary-nav" aria-label="主要导航">
+        <a href="#about" data-page="about"><span lang="en">About</span><span>关于我</span></a>
+        <a href="#cv" data-page="cv"><span lang="en">Résumé</span><span>简历</span></a>
+        <a href="#research" data-page="research"><span lang="en">Research</span><span>研究</span></a>
+        <a href="#grants" data-page="grants"><span lang="en">Grants</span><span>基金项目</span></a>
+        <a href="#teaching" data-page="teaching"><span lang="en">Teaching</span><span>教学</span></a>
+        <a href="#contact" data-page="contact"><span lang="en">Contact</span><span>联系方式</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="template-tools" id="template-tools">
+    <div class="template-tools-inner">
+      <p><span class="template-label">CV 已录入</span><span>可继续补充照片、中文姓名与个人学术链接。</span></p>
+      <div class="template-actions">
+        <button type="button" id="hint-toggle" aria-pressed="true">隐藏填写提示</button>
+        <button type="button" id="guide-toggle" aria-expanded="false" aria-controls="filling-guide">填写清单 <span aria-hidden="true">↗</span></button>
+      </div>
+    </div>
+    <section class="filling-guide" id="filling-guide" aria-label="个人资料填写清单" hidden>
+      <div class="guide-heading"><h2>已录入内容与待补充清单</h2><p>资料已根据提供的 CV 整理。个人信息集中在 <code>profile.js</code> 中；照片与 PDF 放在 <code>assets/</code> 文件夹。</p></div>
+      <div class="guide-table-wrap">
+        <table class="guide-table">
+          <thead><tr><th>网页位置</th><th>当前内容与待补充项</th><th>修改位置</th></tr></thead>
+          <tbody>
+            <tr><td>左侧个人资料</td><td>已填英文姓名、身份、院系、学校、城市和邮箱；待补中文姓名、照片及个人学术链接。</td><td><code>profile</code></td></tr>
+            <tr><td>About 关于我</td><td>已根据 CV 整理中英文简介及研究概述，可继续调整措辞。</td><td><code>about</code></td></tr>
+            <tr><td>Résumé 简历</td><td>已填教育、导师、成绩、课程、学术组织经历及语言；待补英文 CV PDF，中文版本可选。</td><td><code>cv</code></td></tr>
+            <tr><td>Research 研究</td><td>已填 2 篇期刊论文、3 篇预印本、23 条会议与报告记录；可补 DOI、PDF 和具体报告题目。</td><td><code>research</code></td></tr>
+            <tr><td>Grants 基金</td><td>已填 1 项基金和 9 项奖励；待确认项目中的主持或参与身份。</td><td><code>grants</code></td></tr>
+            <tr><td>Teaching 教学</td><td>已填 2023 年秋季助教经历；可补课程网页与讲义。</td><td><code>teaching</code></td></tr>
+            <tr><td>Contact 联系</td><td>已填邮箱及通讯地址；可补办公室和邮编。</td><td><code>contact</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="guide-bottom">没有的经历可以删除对应条目；不需要的栏目可在 <code>site.sections</code> 中隐藏。填写完成后，将 <code>site.templateMode</code> 改为 <code>false</code>，即可移除提示条。</p>
+    </section>
+  </div>
+
+  <div class="page-layout">
+    <aside class="profile" aria-label="个人资料" id="profile"></aside>
+    <main id="main" tabindex="-1">
+      <noscript><h1>Cheng Yuan</h1><p>Ph.D. Student in Mathematics, Fudan University.</p><p>请在浏览器中启用 JavaScript，以查看主页各栏目。</p></noscript>
+      <section class="page" id="page-about" aria-label="关于我"></section>
+      <section class="page" id="page-cv" aria-label="简历" hidden></section>
+      <section class="page" id="page-research" aria-label="研究" hidden></section>
+      <section class="page" id="page-grants" aria-label="基金项目" hidden></section>
+      <section class="page" id="page-teaching" aria-label="教学" hidden></section>
+      <section class="page" id="page-contact" aria-label="联系方式" hidden></section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div><span id="copyright"></span><span id="last-updated"></span></div>
+    <p class="template-footer">版式参考 <a href="https://sanyutsing.github.io/" target="_blank" rel="noopener noreferrer">Xinyu’s Site</a></p>
+  </footer>
+</body>
+</html>
