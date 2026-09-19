@@ -455,7 +455,10 @@
             `<ul class="list-simple">
               ${
                 d.research.service.map(text =>
-                  `<li>${esc(text)}</li>`
+                  `<li>${esc(text).replace(
+                    /\bCMC\b/g,
+                    external('CMC', 'http://www.cmathc.cn/')
+                  )}</li>`
                 ).join('')
               }
             </ul>`
