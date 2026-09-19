@@ -110,3 +110,250 @@ main{min-width:0}main:focus{outline:none}.page-header{border-bottom:1px solid va
     break-inside: avoid;
   }
 }
+/* Blue and white academic theme */
+
+:root {
+  --ink: #24364a;
+  --muted: #5f7184;
+  --blue: #245b8c;
+  --blue-dark: #153f66;
+  --line: #d6e3f0;
+  --wash: #eef5fc;
+  --paper: #ffffff;
+}
+
+/* Light blue page background */
+body {
+  background: linear-gradient(
+    110deg,
+    #e4effb 0%,
+    #f7fbff 50%,
+    #eaf3fd 100%
+  );
+}
+
+/* Dark blue navigation */
+.masthead {
+  background: #193f67;
+  border-top: 4px solid #a9c8e8;
+  border-bottom: 1px solid #294f75;
+  box-shadow: 0 3px 15px rgba(23, 63, 101, 0.08);
+}
+
+.masthead .site-title,
+.masthead .site-title:hover {
+  color: #ffffff;
+}
+
+.masthead .site-subtitle {
+  color: #c9dced;
+}
+
+.masthead .primary-nav a {
+  color: #d9e8f6;
+}
+
+.masthead .primary-nav a:hover,
+.masthead .primary-nav a[aria-current="page"] {
+  color: #ffffff;
+}
+
+.masthead .primary-nav a[aria-current="page"]:after {
+  background: #9cc9f3;
+}
+
+/* Space between the sidebar and main content */
+.page-layout {
+  grid-template-columns: 252px minmax(0, 1fr);
+  gap: 30px;
+  padding-top: 38px;
+  padding-bottom: 56px;
+  align-items: start;
+}
+
+/* Pale blue personal profile */
+.profile {
+  padding: 26px 22px;
+  background: linear-gradient(
+    180deg,
+    #e4effa 0%,
+    #f1f7fd 100%
+  );
+  border: 1px solid #cddff0;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(23, 63, 101, 0.04);
+}
+
+.portrait {
+  outline: 5px solid #ffffff;
+  box-shadow: 0 0 0 6px #caddec;
+}
+
+.profile-links {
+  border-top-color: #cddff0;
+}
+
+/* White main content card */
+#main {
+  min-width: 0;
+  padding: 34px 38px;
+  background: #ffffff;
+  border: 1px solid #d7e4f0;
+  border-radius: 14px;
+  box-shadow: 0 10px 32px rgba(23, 63, 101, 0.045);
+}
+
+/* Pale blue heading band */
+.page-header {
+  margin: -34px -38px 28px;
+  padding: 28px 38px 22px;
+  background: #f0f6fd;
+  border-bottom: 1px solid #dce8f3;
+  border-radius: 14px 14px 0 0;
+}
+
+.page-header h1 {
+  color: #153f66;
+}
+
+.content-section h2 {
+  color: #244f77;
+}
+
+/* Alternating white and pale blue research interests */
+.research-list li {
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+.research-list li:nth-child(even) {
+  background: #f0f6fd;
+}
+
+.research-list .list-index {
+  color: #7393b0;
+}
+
+/* Download buttons and photographs */
+.pdf-button {
+  background: #edf5fd;
+  border-color: #c7dced;
+}
+
+.pdf-button:hover {
+  background: #deecf8;
+  border-color: #a8c6e2;
+}
+
+.life-photo a {
+  background: #ffffff;
+  border-color: #ccdeed;
+  border-radius: 10px;
+}
+
+.site-footer {
+  color: #607c96;
+  border-top-color: #c8dbed;
+}
+
+/* Smaller desktop and tablet screens */
+@media (max-width: 1020px) {
+  .page-layout {
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .profile {
+    padding: 24px 18px;
+  }
+
+  #main {
+    padding: 28px;
+  }
+
+  .page-header {
+    margin: -28px -28px 24px;
+    padding: 24px 28px 20px;
+  }
+}
+
+/* Single-column layout */
+@media (max-width: 780px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding-top: 24px;
+    padding-bottom: 36px;
+  }
+
+  .profile {
+    padding: 24px;
+  }
+
+  #main {
+    padding: 26px;
+  }
+
+  .page-header {
+    margin: -26px -26px 24px;
+    padding: 24px 26px 20px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 440px) {
+  .page-layout {
+    padding-left: 14px;
+    padding-right: 14px;
+    gap: 18px;
+  }
+
+  .profile {
+    padding: 20px 16px;
+  }
+
+  #main {
+    padding: 24px 20px;
+  }
+
+  .page-header {
+    margin: -24px -20px 22px;
+    padding: 22px 20px 18px;
+  }
+}
+
+/* Clean printing */
+@media print {
+  body,
+  .masthead,
+  .profile,
+  #main,
+  .page-header {
+    background: #ffffff !important;
+    box-shadow: none !important;
+  }
+
+  .masthead .site-title,
+  .masthead .site-subtitle {
+    color: #24364a;
+  }
+
+  .page-layout {
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 30px;
+    padding: 25px 0;
+  }
+
+  .profile,
+  #main {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .page-header {
+    margin: 0 0 20px;
+    padding: 0 0 14px;
+  }
+}
