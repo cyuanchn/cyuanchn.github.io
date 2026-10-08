@@ -335,7 +335,7 @@
     (cvLinks ? `<div class="download-row">${cvLinks}</div>` : '') +
     (
       d.cv.positions.length
-        ? section('Appointments', timeline(d.cv.positions))
+        ? section('Visiting', timeline(d.cv.positions))
         : ''
     ) +
     section('Education', timeline(d.cv.education)) +
