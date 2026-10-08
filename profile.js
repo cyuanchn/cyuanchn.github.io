@@ -66,7 +66,18 @@ window.PROFILE = {
   "cv": {
     "englishPdf": "assets/cvEN.pdf",
     "chinesePdf": "",
-    "positions": [],
+    "positions": [
+  {
+    "period": "Sept.–Oct. 2026",
+    "title": "Visiting Scholar",
+    "institution": "Chinese Academy of Sciences"
+  },
+  {
+    "period": "March–May 2025",
+    "title": "Visiting Scholar",
+    "institution": "University of Minnesota"
+  }
+],
     "education": [
       {
         "period": "2022–2027 (expected)",
