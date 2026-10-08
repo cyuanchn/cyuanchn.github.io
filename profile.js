@@ -237,8 +237,22 @@ window.PROFILE = {
       },
       {
         "date": "December 2025",
+        "title": "Academic Meeting of the NSFC Major Program (Fundamental Theory and Applications of Fluid Mechanics)",
+        "venue": "Xinyang (XYNU)",
+        "role": "Speaker",
+        "url": ""
+      },
+      {
+        "date": "December 2025",
         "title": "33rd Yangtze River PDE Conference",
         "venue": "Nanjing (NUAA)",
+        "role": "Speaker",
+        "url": ""
+      },
+      {
+        "date": "November 2025",
+        "title": "Inaugural “Jiao·Chuang” National High-Level Doctoral Academic Forum",
+        "venue": "Shanghai Jiao Tong University",
         "role": "Speaker",
         "url": ""
       },
