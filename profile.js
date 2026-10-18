@@ -33,7 +33,7 @@ window.PROFILE = {
       {
         "label": "ORCID",
         "url": "https://orcid.org/0009-0009-5341-9482"
-      }
+      },
     ]
   },
 
