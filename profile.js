@@ -31,8 +31,8 @@ window.PROFILE = {
         "url": "https://scholar.google.com/citations?user=_gCpYaIAAAAJ&hl=zh-CN"
       },
       {
-        "label": "arXiv",
-        "url": ""
+        "label": "ORCID",
+        "url": "https://orcid.org/0009-0009-5341-9482"
       }
     ]
   },
