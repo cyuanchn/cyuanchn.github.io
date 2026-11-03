@@ -172,6 +172,16 @@ window.PROFILE = {
 
     "preprints": [
       {
+       "title": "A Good-Vorticity Low-Regularity Integrator for the Inviscid Oldroyd–B System with Stress Diffusion",
+       "authors": "With X. Cheng, Z. Luo and Z. Yang",
+       "venue": "arXiv:2610.41250 · Submitted",
+       "year": "2026",
+       "doi": "",
+       "arxiv": "https://arxiv.org/abs/2610.41250",
+       "pdf": "",
+       "summary": "This work is a continuation of our theoretical study in [3] (arXiv:2410.09340). We analyze a sequential semi-implicit good-vorticity integrator for the two-dimensional inviscid Oldroyd–B system with stress diffusion and establish sharp convergence results in both critical and subcritical Besov spaces."
+      },
+      {
         "title": "On Cauchy problems for parabolic equations with rough coefficients",
         "authors": "Cheng Yuan",
         "venue": "arXiv:2608.29984 · Submitted",
