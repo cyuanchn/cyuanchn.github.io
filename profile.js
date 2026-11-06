@@ -215,6 +215,13 @@ window.PROFILE = {
 
     "talks": [
       {
+        "date": "October 2026",
+        "title": "PDE Seminar",
+        "venue": "CAS (AMSS)",
+        "role": "Speaker",
+        "url": ""
+      },
+      {
         "date": "July 2026",
         "title": "Conference on Mathematical Fluid Dynamics",
         "venue": "Feishu Shanghai",
@@ -238,6 +245,13 @@ window.PROFILE = {
       {
         "date": "July 2026",
         "title": "2nd Frontiers in Fluid and Kinetic PDEs",
+        "venue": "CAS (AMSS)",
+        "role": "Speaker",
+        "url": ""
+      },
+      {
+        "date": "June 2026",
+        "title": "PDE Seminar",
         "venue": "CAS (AMSS)",
         "role": "Speaker",
         "url": ""
@@ -425,7 +439,7 @@ window.PROFILE = {
         "detail": ""
       },
       {
-        "period": "2023",
+        "period": "2023,2025,2026",
         "title": "National Prize Scholarship for Ph.D. Students",
         "institution": "Fudan University",
         "detail": ""
